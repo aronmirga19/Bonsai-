@@ -1,10 +1,8 @@
 name: rust-ci
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ main ] # run only when making a PR for main
 
 env:
   CARGO_TERM_COLOR: always
